@@ -8,75 +8,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Isamasm</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>CLI Automation Suite</h2>
+                    <p class="project-tagline">Command-line tools for DevOps automation</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Overview</h3>
+                    <p>
+                        A collection of Bash and Python scripts designed to automate common DevOps tasks. 
+                        The suite includes tools for deployments, monitoring, log analysis, and system 
+                        maintenance.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Included Tools</h3>
+                    <ul>
+                        <li><strong>deploy.sh</strong> - Automated application deployment with rollback support</li>
+                        <li><strong>monitor.py</strong> - System monitoring and alerting</li>
+                        <li><strong>log-analyzer.sh</strong> - Log parsing and analysis</li>
+                        <li><strong>backup-manager.py</strong> - Database backup automation</li>
+                        <li><strong>ssl-checker.sh</strong> - SSL certificate monitoring</li>
+                        <li><strong>health-check.py</strong> - Service health monitoring</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">Bash</span>
+                        <span class="project-tech">Python</span>
+                        <span class="project-tech">AWS CLI</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Kubernetes</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Usage</h3>
+                    <p>
+                        Each tool includes comprehensive documentation and can be used independently or 
+                        as part of a larger automation workflow. The scripts are designed to be idempotent 
+                        and safe for production use.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/Isamasm/cli-automation">Source Code</a></li>
+                        <li><a href="https://docs.cli-automation.example.com">Documentation</a></li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
     
-    <main>
-        <article class="project-detail">
-            <header class="project-detail-header">
-                <a href="projects.html" class="back-link">← All Projects</a>
-                <h2>CLI Automation Suite</h2>
-                <p class="project-tagline">Command-line tools for DevOps automation</p>
-            </header>
-
-            <section class="project-detail-section">
-                <h3>Overview</h3>
-                <p>
-                    A collection of Bash and Python scripts designed to automate common DevOps tasks. 
-                    The suite includes tools for deployments, monitoring, log analysis, and system 
-                    maintenance.
-                </p>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Included Tools</h3>
-                <ul>
-                    <li><strong>deploy.sh</strong> - Automated application deployment with rollback support</li>
-                    <li><strong>monitor.py</strong> - System monitoring and alerting</li>
-                    <li><strong>log-analyzer.sh</strong> - Log parsing and analysis</li>
-                    <li><strong>backup-manager.py</strong> - Database backup automation</li>
-                    <li><strong>ssl-checker.sh</strong> - SSL certificate monitoring</li>
-                    <li><strong>health-check.py</strong> - Service health monitoring</li>
-                </ul>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Technologies</h3>
-                <div class="project-meta">
-                    <span class="project-tech">Bash</span>
-                    <span class="project-tech">Python</span>
-                    <span class="project-tech">AWS CLI</span>
-                    <span class="project-tech">Docker</span>
-                    <span class="project-tech">Kubernetes</span>
-                </div>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Usage</h3>
-                <p>
-                    Each tool includes comprehensive documentation and can be used independently or 
-                    as part of a larger automation workflow. The scripts are designed to be idempotent 
-                    and safe for production use.
-                </p>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="https://github.com/Isamasm/cli-automation">Source Code</a></li>
-                    <li><a href="https://docs.cli-automation.example.com">Documentation</a></li>
-                </ul>
-            </section>
-        </article>
-    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

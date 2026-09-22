@@ -1,13 +1,16 @@
-/* Minimalist portfolio styling inspired by uncenter.dev */
+/* Minimalist portfolio styling with custom colors */
 
 :root {
-    --text-color: #1a1a1a;
-    --bg-color: #ffffff;
-    --link-color: #0066cc;
-    --border-color: #e0e0e0;
-    --max-width: 650px;
-    --card-bg: #fafafa;
-    --muted-color: #666666;
+    --text-color: #e0e0e0;
+    --bg-color: #0a0a0a;
+    --primary-color: #00d4ff;
+    --secondary-color: #ff6b9d;
+    --accent-color: #8e44ad;
+    --link-color: #00d4ff;
+    --border-color: #333333;
+    --card-bg: #1a1a1a;
+    --muted-color: #888888;
+    --max-width: 1200px;
 }
 
 * {
@@ -24,22 +27,35 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
-    padding: 2rem;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Full width container */
+.container {
     max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    flex: 1;
 }
 
 /* Header and Navigation */
 header {
     margin-bottom: 2rem;
+    position: relative;
 }
 
 header h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin: 0 0 1rem 0;
     line-height: 1.2;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
 }
 
 nav ul {
@@ -47,7 +63,7 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -58,19 +74,37 @@ nav li {
 nav a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding: 0.25rem 0;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 nav a:hover {
-    border-bottom-color: var(--link-color);
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 nav a.active {
-    border-bottom-color: var(--link-color);
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color);
     font-weight: 500;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 /* Main Content */
@@ -78,6 +112,29 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex: 1;
+}
+
+/* Page transition effect */
+.page {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 section {
@@ -315,9 +372,51 @@ a:hover {
     font-size: 0.95rem;
 }
 
+/* Footer */
+footer {
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-name {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    body {
+    .container {
         padding: 1.5rem;
     }
     
@@ -332,15 +431,24 @@ a:hover {
     nav a {
         font-size: 0.85rem;
     }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
-    body {
+    .container {
         padding: 1rem;
     }
     
     header h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     
     section h2 {

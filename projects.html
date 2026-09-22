@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Isamasm</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Projects</h2>
-            <p>
-                Here are some of the projects I've worked on. Click on any project to view its details.
-            </p>
-        </section>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <section>
+                <h2>Projects</h2>
+                <p>
+                    Here are some of the projects I've worked on. Click on any project to view its details.
+                </p>
+            </section>
 
-        <div class="projects-grid">
+            <div class="projects-grid">
             <article class="project-card">
                 <h3>Project Alpha</h3>
                 <p class="project-tagline">A web application for managing technical workflows</p>
@@ -89,6 +90,21 @@
                 <a href="project-cli.html" class="project-link">View Project →</a>
             </article>
         </div>
-    </main>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

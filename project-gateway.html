@@ -8,76 +8,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Isamasm</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>API Gateway</h2>
+                    <p class="project-tagline">Microservices communication layer</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Overview</h3>
+                    <p>
+                        A lightweight API gateway built with Express.js that serves as the single entry 
+                        point for all client requests. It routes requests to the appropriate microservices, 
+                        handles authentication and authorization, and provides rate limiting.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Request routing based on path and HTTP method</li>
+                        <li>JWT-based authentication and authorization</li>
+                        <li>Rate limiting to prevent abuse</li>
+                        <li>Request/response transformation</li>
+                        <li>Circuit breaker pattern for fault tolerance</li>
+                        <li>Request logging and monitoring</li>
+                        <li>Caching for improved performance</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">Express.js</span>
+                        <span class="project-tech">Node.js</span>
+                        <span class="project-tech">JWT</span>
+                        <span class="project-tech">Redis</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Nginx</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Configuration</h3>
+                    <p>
+                        The gateway is configured through a simple YAML file that defines routes, 
+                        middleware, and service endpoints. This allows for easy updates without code changes.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/Isamasm/api-gateway">Source Code</a></li>
+                        <li><a href="https://docs.api-gateway.example.com">Documentation</a></li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
     
-    <main>
-        <article class="project-detail">
-            <header class="project-detail-header">
-                <a href="projects.html" class="back-link">← All Projects</a>
-                <h2>API Gateway</h2>
-                <p class="project-tagline">Microservices communication layer</p>
-            </header>
-
-            <section class="project-detail-section">
-                <h3>Overview</h3>
-                <p>
-                    A lightweight API gateway built with Express.js that serves as the single entry 
-                    point for all client requests. It routes requests to the appropriate microservices, 
-                    handles authentication and authorization, and provides rate limiting.
-                </p>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Features</h3>
-                <ul>
-                    <li>Request routing based on path and HTTP method</li>
-                    <li>JWT-based authentication and authorization</li>
-                    <li>Rate limiting to prevent abuse</li>
-                    <li>Request/response transformation</li>
-                    <li>Circuit breaker pattern for fault tolerance</li>
-                    <li>Request logging and monitoring</li>
-                    <li>Caching for improved performance</li>
-                </ul>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Technologies</h3>
-                <div class="project-meta">
-                    <span class="project-tech">Express.js</span>
-                    <span class="project-tech">Node.js</span>
-                    <span class="project-tech">JWT</span>
-                    <span class="project-tech">Redis</span>
-                    <span class="project-tech">Docker</span>
-                    <span class="project-tech">Nginx</span>
-                </div>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Configuration</h3>
-                <p>
-                    The gateway is configured through a simple YAML file that defines routes, 
-                    middleware, and service endpoints. This allows for easy updates without code changes.
-                </p>
-            </section>
-
-            <section class="project-detail-section">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="https://github.com/Isamasm/api-gateway">Source Code</a></li>
-                    <li><a href="https://docs.api-gateway.example.com">Documentation</a></li>
-                </ul>
-            </section>
-        </article>
-    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
