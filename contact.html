@@ -6,6 +6,7 @@
     <meta name="description" content="Get in touch with Isamasm - System Administrator and Infrastructure Specialist.">
     <title>Contact - Isamasm</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -26,43 +27,54 @@
                 <h2>Contact</h2>
                 <p>
                     Feel free to reach out for collaborations, questions about system administration, 
-                    infrastructure discussions, or just to connect. I'm always happy to chat about 
-                    networking, homelabbing, or any tech-related topics.
+                    infrastructure discussions, or just to connect.
                 </p>
             </section>
 
-            <section class="contact-grid">
-                <div class="contact-card">
-                    <h3>LinkedIn</h3>
-                    <p>
-                        Professional network, work experience, and system administration insights.
-                    </p>
-                    <a href="https://www.linkedin.com/in/isam-aitsim-barek-4a6097343" class="contact-link">linkedin.com/in/isam-aitsim-barek-4a6097343 →</a>
-                </div>
+            <section class="contact-icons">
+                <a href="https://www.linkedin.com/in/isam-aitsim-barek-4a6097343" class="contact-icon-link" title="LinkedIn">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                </a>
+                <a href="https://x.com/laszlo_00" class="contact-icon-link" title="X/Twitter">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                        <span>X/Twitter</span>
+                    </div>
+                </a>
+                <a href="mailto:isamaitsimbarek@gamil.com" class="contact-icon-link" title="Email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                </a>
+                <a href="https://discordapp.com/users/laszlo_016" class="contact-icon-link" title="Discord">
+                    <div class="contact-icon">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </div>
+                </a>
+            </section>
 
-                <div class="contact-card">
-                    <h3>X / Twitter</h3>
-                    <p>
-                        Quick updates, tech thoughts, and system administration tips.
-                    </p>
-                    <a href="https://x.com/laszlo_00" class="contact-link">x.com/laszlo_00 →</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>
-                        For direct inquiries, collaborations, or detailed discussions.
-                    </p>
-                    <a href="mailto:isamaitsimbarek@gamil.com" class="contact-link">isamaitsimbarek@gamil.com →</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Discord</h3>
-                    <p>
-                        Real-time chat and community discussions about tech and homelabbing.
-                    </p>
-                    <a href="https://discordapp.com/users/laszlo_016" class="contact-link">@laszlo_016 →</a>
-                </div>
+            <section class="contact-form">
+                <h3>Send me a message</h3>
+                <form action="https://formspree.io/f/mleznjgo" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </section>
         </main>
     </div>
@@ -75,6 +87,17 @@
                 <a href="projects.html">Projects</a>
                 <a href="interests.html">Interests</a>
                 <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/isam-aitsim-barek-4a6097343" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/laszlo_00" class="social-link" title="X/Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:isamaitsimbarek@gamil.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </footer>
