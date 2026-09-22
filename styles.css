@@ -460,6 +460,27 @@ footer {
     transition: color 0.3s ease;
 }
 
+
+/* Social Links in Footer */
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
 .footer-nav a:hover {
     color: var(--primary-color);
 }
