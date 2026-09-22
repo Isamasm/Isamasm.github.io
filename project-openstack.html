@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private OpenStack Cloud with Kolla-Ansible - Fully functional private cloud platform with automated deployment">
+    <title>Private OpenStack Cloud - Isamasm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>Private OpenStack Cloud with Kolla-Ansible</h2>
+                    <p class="project-tagline">Fully functional private cloud platform with automated deployment</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Objective</h3>
+                    <p>
+                        Deployed a fully functional private cloud using OpenStack, automated with Kolla-Ansible. 
+                        This project demonstrates the ability to deploy and manage a complete cloud infrastructure 
+                        platform with all the core services required for enterprise-grade cloud computing.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies Used</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">OpenStack</span>
+                        <span class="project-tech">Kolla-Ansible</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Ceph</span>
+                        <span class="project-tech">Nova</span>
+                        <span class="project-tech">Glance</span>
+                        <span class="project-tech">Keystone</span>
+                        <span class="project-tech">Neutron</span>
+                        <span class="project-tech">Cinder</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>OpenStack Services Deployed</h3>
+                    
+                    <div class="service-card">
+                        <h4>Nova (Compute)</h4>
+                        <p>
+                            <strong>Virtual Machine Management:</strong> Nova provides the compute service for creating, 
+                            managing, and terminating virtual machines. It handles the lifecycle of compute instances 
+                            and manages the hypervisor interactions.
+                        </p>
+                        <p><strong>Scalability:</strong> Supports scaling from a single node to large clusters with hundreds of nodes.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Glance (Image Service)</h4>
+                        <p>
+                            <strong>Disk Image Management:</strong> Glance provides services for discovering, registering, 
+                            and retrieving virtual machine disk images. It stores and manages VM images and snapshots.
+                        </p>
+                        <p><strong>Image Formats:</strong> Supports various disk and container formats including raw, VHD, VMDK, and QCOW2.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Keystone (Identity Service)</h4>
+                        <p>
+                            <strong>Authentication & Authorization:</strong> Keystone provides authentication and 
+                            authorization services for OpenStack. It manages users, roles, and permissions across all 
+                            OpenStack services.
+                        </p>
+                        <p><strong>Multi-tenancy:</strong> Supports isolation between different projects or tenants within the cloud.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Neutron (Networking)</h4>
+                        <p>
+                            <strong>Network Management:</strong> Neutron provides networking as a service for OpenStack. 
+                            It manages networks, subnets, routers, and ports. Supports VLANs, VXLANs, and GRE for network 
+                            isolation.
+                        </p>
+                        <p><strong>Advanced Networking:</strong> Enables complex network topologies including load balancers, firewalls, and VPNs.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Cinder (Block Storage)</h4>
+                        <p>
+                            <strong>Persistent Storage:</strong> Cinder provides persistent block storage for virtual machines. 
+                            It manages the creation, attachment, and detachment of block storage devices to VMs.
+                        </p>
+                        <p><strong>Volume Management:</strong> Supports volume snapshots, backups, and volume type management for different performance tiers.</p>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Deployment Methodology</h3>
+                    
+                    <div class="service-card">
+                        <h4>Kolla-Ansible</h4>
+                        <p>
+                            <strong>Automated Deployment:</strong> Used Kolla-Ansible for automated deployment and configuration 
+                            of OpenStack services. This significantly simplifies the complex process of setting up a 
+                            complete OpenStack environment.
+                        </p>
+                        <p><strong>Configuration Management:</strong> All configuration is managed through Ansible playbooks and variables.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Docker Containers</h4>
+                        <p>
+                            <strong>Containerized Services:</strong> All OpenStack services run in Docker containers, 
+                            ensuring consistency and ease of updates. This approach isolates each service and simplifies 
+                            dependency management.
+                        </p>
+                        <p><strong>Service Isolation:</strong> Each OpenStack service runs in its own container with defined resource limits.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Ceph Integration</h4>
+                        <p>
+                            <strong>Backend Storage:</strong> Configured Ceph as the backend storage for OpenStack, providing 
+                            scalable, distributed storage for VMs and volumes. Ceph provides high availability and 
+                            redundancy for cloud storage.
+                        </p>
+                        <p><strong>Performance:</strong> Ceph's distributed nature ensures good performance and scalability for growing storage needs.</p>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Impact & Skills Demonstrated</h3>
+                    <ul>
+                        <li><strong>Cloud Infrastructure:</strong> Ability to deploy and manage a complete private cloud platform</li>
+                        <li><strong>Automation:</strong> Proficiency with Kolla-Ansible for automated OpenStack deployment</li>
+                        <li><strong>Containerization:</strong> Experience with Docker and container-based service deployments</li>
+                        <li><strong>Compute Services:</strong> Understanding of Nova and virtual machine management at scale</li>
+                        <li><strong>Storage Management:</strong> Knowledge of Cinder and Ceph for cloud storage solutions</li>
+                        <li><strong>Networking:</strong> Expertise in Neutron for complex cloud networking configurations</li>
+                        <li><strong>Identity Management:</strong> Experience with Keystone for authentication and authorization</li>
+                        <li><strong>Image Management:</strong> Knowledge of Glance for VM image storage and management</li>
+                        <li><strong>Enterprise Architecture:</strong> Understanding of how all OpenStack components integrate to form a complete cloud platform</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Cloud Capabilities</h3>
+                    <p>
+                        This OpenStack deployment provides a complete set of cloud capabilities:
+                    </p>
+                    <ul>
+                        <li><strong>On-Demand Compute:</strong> Create and manage virtual machines on demand with various flavors and configurations</li>
+                        <li><strong>Scalable Storage:</strong> Attach persistent block storage to VMs with different performance characteristics</li>
+                        <li><strong>Network Isolation:</strong> Create isolated networks for different projects or tenants</li>
+                        <li><strong>Self-Service Portal:</strong> Web-based dashboard for users to manage their own resources</li>
+                        <li><strong>Multi-Tenancy:</strong> Support for multiple isolated projects or organizations within the same cloud</li>
+                        <li><strong>API Access:</strong> RESTful APIs for programmatic management of all cloud resources</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Use Cases</h3>
+                    <p>
+                        This private cloud platform can be used for:
+                    </p>
+                    <ul>
+                        <li><strong>Development & Testing:</strong> Provides on-demand environments for development and testing</li>
+                        <li><strong>Production Hosting:</strong> Hosts production workloads with proper isolation and resource guarantees</li>
+                        <li><strong>Education & Training:</strong> Platform for learning cloud technologies and OpenStack specifically</li>
+                        <li><strong>Research:</strong> Environment for experimenting with cloud architectures and configurations</li>
+                        <li><strong>Disaster Recovery:</strong> Can serve as a backup platform for disaster recovery scenarios</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Isamasm - Projects and experiments across IT and technology.">
+    <meta name="description" content="Isamasm - System administration and infrastructure projects including homelab setups, cloud platforms, and containerized services.">
     <title>Projects - Isamasm</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,71 +25,107 @@
             <section>
                 <h2>Projects</h2>
                 <p>
-                    Here are some of the projects I've worked on. Click on any project to view its details.
+                    Here are my infrastructure and system administration projects. Each represents hands-on 
+                    experience with enterprise-grade technologies, from homelab setups to hybrid cloud platforms.
                 </p>
             </section>
 
             <div class="projects-grid">
-            <article class="project-card">
-                <h3>Project Alpha</h3>
-                <p class="project-tagline">A web application for managing technical workflows</p>
-                <p class="project-description">
-                    Built with React, Node.js, and MongoDB. This project helps teams streamline 
-                    their development processes with automated task management and real-time collaboration.
-                </p>
-                <div class="project-meta">
-                    <span class="project-tech">React</span>
-                    <span class="project-tech">Node.js</span>
-                    <span class="project-tech">MongoDB</span>
-                </div>
-                <a href="project-alpha.html" class="project-link">View Project →</a>
-            </article>
+                <article class="project-card">
+                    <h3>Advanced Proxmox Home Lab with Integrated Services</h3>
+                    <p class="project-tagline">Production-grade homelab for testing network architectures and containerized services</p>
+                    <p class="project-description">
+                        Built a comprehensive homelab environment featuring Pi-hole (DNS sinkhole), Jellyfin media server, 
+                        Icecast/Shoutcast radio station, Portainer for Docker management, TrueNAS/Nextcloud NAS, and 
+                        Tailscale VPN for secure remote access.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tech">Proxmox VE</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Pi-hole</span>
+                        <span class="project-tech">Jellyfin</span>
+                        <span class="project-tech">Tailscale</span>
+                        <span class="project-tech">TrueNAS</span>
+                    </div>
+                    <a href="project-proxmox-homelab.html" class="project-link">View Project →</a>
+                </article>
 
-            <article class="project-card">
-                <h3>Data Pipeline Tool</h3>
-                <p class="project-tagline">ETL pipeline for processing large datasets</p>
-                <p class="project-description">
-                    Python-based tool that extracts, transforms, and loads data from multiple sources 
-                    into a centralized database. Optimized for performance and scalability.
-                </p>
-                <div class="project-meta">
-                    <span class="project-tech">Python</span>
-                    <span class="project-tech">Pandas</span>
-                    <span class="project-tech">PostgreSQL</span>
-                </div>
-                <a href="project-pipeline.html" class="project-link">View Project →</a>
-            </article>
+                <article class="project-card">
+                    <h3>Hybrid Infrastructure Management Platform</h3>
+                    <p class="project-tagline">Enterprise hybrid cloud infrastructure with monitoring and automation</p>
+                    <p class="project-description">
+                        Designed and deployed a hybrid (on-premises + Azure cloud) infrastructure management platform 
+                        during my internship at Holcim Agadir, featuring Azure IaaS/PaaS, Terraform IaC, Ansible automation, 
+                        Zabbix/Grafana monitoring, and GLPI asset management.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tech">Azure</span>
+                        <span class="project-tech">Terraform</span>
+                        <span class="project-tech">Ansible</span>
+                        <span class="project-tech">Zabbix</span>
+                        <span class="project-tech">Grafana</span>
+                        <span class="project-tech">Active Directory</span>
+                    </div>
+                    <a href="project-hybrid-infrastructure.html" class="project-link">View Project →</a>
+                </article>
 
-            <article class="project-card">
-                <h3>API Gateway</h3>
-                <p class="project-tagline">Microservices communication layer</p>
-                <p class="project-description">
-                    A lightweight API gateway built with Express.js that routes requests to various 
-                    microservices, handles authentication, and provides rate limiting.
-                </p>
-                <div class="project-meta">
-                    <span class="project-tech">Express.js</span>
-                    <span class="project-tech">JWT</span>
-                    <span class="project-tech">Docker</span>
-                </div>
-                <a href="project-gateway.html" class="project-link">View Project →</a>
-            </article>
+                <article class="project-card">
+                    <h3>Containerized Web + FTP Infrastructure</h3>
+                    <p class="project-tagline">Modern scalable web infrastructure with database and file transfer services</p>
+                    <p class="project-description">
+                        Developed a containerized web infrastructure with MySQL/PostgreSQL databases, vsftpd for 
+                        secure file transfers, Kubernetes orchestration, and Traefik/Nginx reverse proxy for routing 
+                        and SSL termination.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Kubernetes</span>
+                        <span class="project-tech">Nginx</span>
+                        <span class="project-tech">MySQL</span>
+                        <span class="project-tech">Traefik</span>
+                        <span class="project-tech">vsftpd</span>
+                    </div>
+                    <a href="project-containerized-web.html" class="project-link">View Project →</a>
+                </article>
 
-            <article class="project-card">
-                <h3>CLI Automation Suite</h3>
-                <p class="project-tagline">Command-line tools for DevOps automation</p>
-                <p class="project-description">
-                    Collection of Bash and Python scripts for automating common DevOps tasks like 
-                    deployments, monitoring, and log analysis.
-                </p>
-                <div class="project-meta">
-                    <span class="project-tech">Bash</span>
-                    <span class="project-tech">Python</span>
-                    <span class="project-tech">AWS CLI</span>
-                </div>
-                <a href="project-cli.html" class="project-link">View Project →</a>
-            </article>
-        </div>
+                <article class="project-card">
+                    <h3>Advanced Proxmox Cluster for High Availability</h3>
+                    <p class="project-tagline">Multi-node Proxmox cluster with distributed storage and fault tolerance</p>
+                    <p class="project-description">
+                        Extended homelab to create a high-availability Proxmox cluster with Ceph/ZFS shared storage, 
+                        automatic VM failover, and preparation for K3s Kubernetes deployment. Used for testing complex 
+                        network architectures including VLANs, routing, and security policies.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tech">Proxmox VE</span>
+                        <span class="project-tech">Ceph</span>
+                        <span class="project-tech">ZFS</span>
+                        <span class="project-tech">HA</span>
+                        <span class="project-tech">K3s</span>
+                        <span class="project-tech">Tailscale</span>
+                    </div>
+                    <a href="project-proxmox-cluster.html" class="project-link">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Private OpenStack Cloud with Kolla-Ansible</h3>
+                    <p class="project-tagline">Fully functional private cloud platform with automated deployment</p>
+                    <p class="project-description">
+                        Deployed a complete OpenStack private cloud using Kolla-Ansible for automation. Features Nova 
+                        (Compute), Glance (Images), Keystone (Identity), Neutron (Networking), and Cinder (Block Storage) 
+                        with Ceph backend and Docker containerization for all services.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tech">OpenStack</span>
+                        <span class="project-tech">Kolla-Ansible</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Ceph</span>
+                        <span class="project-tech">Nova</span>
+                        <span class="project-tech">Neutron</span>
+                    </div>
+                    <a href="project-openstack.html" class="project-link">View Project →</a>
+                </article>
+            </div>
         </main>
     </div>
     

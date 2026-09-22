@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Proxmox Cluster for High Availability - Multi-node Proxmox cluster with distributed storage and fault tolerance">
+    <title>Advanced Proxmox Cluster - Isamasm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>Advanced Proxmox Cluster for High Availability</h2>
+                    <p class="project-tagline">Multi-node Proxmox cluster with distributed storage and fault tolerance</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Objective</h3>
+                    <p>
+                        Extended my Home Lab to create a high-availability Proxmox cluster for testing advanced 
+                        network architectures and preparing for future projects. This cluster provides a resilient 
+                        foundation for experimenting with enterprise-grade technologies.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies Used</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">Proxmox VE</span>
+                        <span class="project-tech">Ceph</span>
+                        <span class="project-tech">ZFS</span>
+                        <span class="project-tech">HA</span>
+                        <span class="project-tech">K3s</span>
+                        <span class="project-tech">Tailscale</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Implemented Components</h3>
+                    
+                    <div class="service-card">
+                        <h4>Multi-Node Cluster</h4>
+                        <p>
+                            <strong>Distributed Infrastructure:</strong> Deployed Proxmox VE across multiple physical nodes 
+                            for redundancy and high availability. This ensures that the cluster remains operational even 
+                            if individual nodes fail.
+                        </p>
+                        <p><strong>Resource Pooling:</strong> Aggregates compute and storage resources from all nodes into a single pool.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Shared Storage (Ceph/ZFS)</h4>
+                        <p>
+                            <strong>Distributed Storage:</strong> Configured Ceph or ZFS for distributed and replicated storage. 
+                            This enables live migration of virtual machines (VMs) between nodes without downtime.
+                        </p>
+                        <p><strong>Data Redundancy:</strong> Implements replication to protect against data loss from hardware failures.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>High Availability (HA)</h4>
+                        <p>
+                            <strong>Automatic Failover:</strong> Implemented Proxmox HA to automatically restart VMs on other 
+                            nodes in case of hardware failure. This minimizes downtime and ensures service continuity.
+                        </p>
+                        <p><strong>Health Monitoring:</strong> Continuous monitoring of node health and automatic recovery actions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>K3s Preparation</h4>
+                        <p>
+                            <strong>Kubernetes Foundation:</strong> Set up the infrastructure to support a future K3s 
+                            (lightweight Kubernetes) cluster for testing containerized applications at scale.
+                        </p>
+                        <p><strong>Container Orchestration:</strong> Prepares the environment for running Kubernetes workloads alongside traditional VMs.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Network Testing</h4>
+                        <p>
+                            <strong>Architecture Validation:</strong> Used the cluster to validate complex network architectures, 
+                            including VLANs, routing policies, and security configurations.
+                        </p>
+                        <p><strong>Performance Testing:</strong> Tests network performance and latency across different configurations.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Tailscale Integration</h4>
+                        <p>
+                            <strong>Secure Remote Management:</strong> Connected the cluster to Tailscale for secure remote 
+                            management and access from external networks without exposing services to the public internet.
+                        </p>
+                        <p><strong>Zero Trust Networking:</strong> Implements modern security principles for remote access.</p>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Cluster Architecture</h3>
+                    <p>
+                        The cluster consists of multiple Proxmox nodes connected through a high-speed network. 
+                        Ceph or ZFS provides shared storage across all nodes, enabling VM live migration. The HA 
+                        system monitors all nodes and automatically redistributes VMs if a node fails. Tailscale 
+                        provides secure remote access to the management interface and VM consoles.
+                    </p>
+                    <p>
+                        The infrastructure is designed to support both traditional virtual machines and modern 
+                        containerized workloads through K3s, making it a versatile platform for testing various 
+                        deployment scenarios.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Impact & Skills Demonstrated</h3>
+                    <ul>
+                        <li><strong>Cluster Management:</strong> Ability to design and manage multi-node Proxmox clusters</li>
+                        <li><strong>High Availability:</strong> Expertise in configuring and managing HA systems for fault tolerance</li>
+                        <li><strong>Distributed Storage:</strong> Knowledge of Ceph and ZFS for shared, replicated storage</li>
+                        <li><strong>Virtualization:</strong> Deep understanding of Proxmox VE and virtual machine management</li>
+                        <li><strong>Network Architecture:</strong> Ability to design and validate complex network configurations</li>
+                        <li><strong>Remote Management:</strong> Experience with secure remote access solutions like Tailscale</li>
+                        <li><strong>Kubernetes Preparation:</strong> Understanding of infrastructure requirements for Kubernetes deployments</li>
+                        <li><strong>Fault Tolerance:</strong> Knowledge of designing systems that continue operating despite failures</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Use Cases</h3>
+                    <p>
+                        This cluster serves multiple purposes:
+                    </p>
+                    <ul>
+                        <li><strong>Testing Environment:</strong> Safe environment for testing new technologies and configurations</li>
+                        <li><strong>Learning Platform:</strong> Hands-on experience with enterprise-grade clustering and HA technologies</li>
+                        <li><strong>Development Platform:</strong> Hosts development and staging environments for various projects</li>
+                        <li><strong>Research & Experimentation:</strong> Allows exploration of different infrastructure configurations and their impacts</li>
+                        <li><strong>Proof of Concept:</strong> Demonstrates capabilities for potential production deployments</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

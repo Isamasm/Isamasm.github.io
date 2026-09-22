@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Containerized Web + FTP Infrastructure - Modern scalable web infrastructure with database and file transfer services">
+    <title>Containerized Web + FTP Infrastructure - Isamasm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>Containerized Web + FTP Infrastructure</h2>
+                    <p class="project-tagline">Modern scalable web infrastructure with database and file transfer services</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Objective</h3>
+                    <p>
+                        Developed a modern, scalable web infrastructure with integrated database and file transfer 
+                        services. This project demonstrates the ability to build and manage complex containerized 
+                        environments for production workloads.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies Used</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Docker Compose</span>
+                        <span class="project-tech">Kubernetes</span>
+                        <span class="project-tech">Nginx</span>
+                        <span class="project-tech">Apache</span>
+                        <span class="project-tech">MySQL</span>
+                        <span class="project-tech">PostgreSQL</span>
+                        <span class="project-tech">vsftpd</span>
+                        <span class="project-tech">Traefik</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Implemented Components</h3>
+                    
+                    <div class="service-card">
+                        <h4>Database Backend</h4>
+                        <p>
+                            <strong>Containerized Databases:</strong> Deployed MySQL and PostgreSQL in Docker containers 
+                            for structured data storage. Implemented automated backups and failover redundancy mechanisms.
+                        </p>
+                        <p><strong>Data Persistence:</strong> Configured volume mounts to ensure data persists across container restarts.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>FTP Server (vsftpd)</h4>
+                        <p>
+                            <strong>Secure File Transfer:</strong> Set up vsftpd in a container for secure file transfers. 
+                            Configured user authentication and encrypted connections (SFTP).
+                        </p>
+                        <p><strong>Access Control:</strong> Implemented user-based permissions and directory restrictions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Docker Containers</h4>
+                        <p>
+                            <strong>Service Containerization:</strong> All services (web servers, databases, FTP) run in 
+                            isolated Docker containers for consistency and portability across different environments.
+                        </p>
+                        <p><strong>Resource Management:</strong> Defined resource limits and health checks for each container.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Kubernetes Orchestration</h4>
+                        <p>
+                            <strong>Container Management:</strong> Used Kubernetes (K8s) for container orchestration, 
+                            including auto-scaling, load balancing, and self-healing deployments.
+                        </p>
+                        <p><strong>High Availability:</strong> Ensures services remain available even if individual containers or nodes fail.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Reverse Proxy (Traefik/Nginx)</h4>
+                        <p>
+                            <strong>Traffic Routing:</strong> Configured Traefik/Nginx as a reverse proxy for routing traffic 
+                            to appropriate services, SSL termination, and load balancing across service instances.
+                        </p>
+                        <p><strong>SSL/TLS:</strong> Automated certificate management for secure HTTPS connections.</p>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Architecture Overview</h3>
+                    <p>
+                        The infrastructure follows a microservices architecture where each component (web server, 
+                        database, FTP) runs in its own container. Kubernetes manages the container lifecycle, 
+                        ensuring high availability and scalability. The reverse proxy sits at the front, routing 
+                        requests to the appropriate services and handling SSL termination.
+                    </p>
+                    <p>
+                        Docker Compose is used for local development and testing, while Kubernetes handles 
+                        production deployments with proper scaling and resilience.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Impact & Skills Demonstrated</h3>
+                    <ul>
+                        <li><strong>Containerization Expertise:</strong> Deep understanding of Docker and container-based deployments</li>
+                        <li><strong>Orchestration:</strong> Proficiency with Kubernetes for managing containerized applications at scale</li>
+                        <li><strong>Web Services:</strong> Experience with Nginx, Apache, and reverse proxy configurations</li>
+                        <li><strong>Database Management:</strong> Knowledge of MySQL and PostgreSQL deployment and management</li>
+                        <li><strong>File Transfer Protocols:</strong> Experience with FTP/SFTP server configuration and security</li>
+                        <li><strong>Load Balancing:</strong> Ability to distribute traffic across multiple service instances</li>
+                        <li><strong>SSL/TLS:</strong> Knowledge of certificate management and secure connections</li>
+                        <li><strong>Microservices Architecture:</strong> Understanding of service decomposition and interaction</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Deployment Scenarios</h3>
+                    <p>
+                        This infrastructure can be deployed in various scenarios:
+                    </p>
+                    <ul>
+                        <li><strong>Development Environment:</strong> Local Docker Compose setup for development and testing</li>
+                        <li><strong>Staging Environment:</strong> Kubernetes deployment for pre-production testing</li>
+                        <li><strong>Production Environment:</strong> Scaled Kubernetes cluster with monitoring and backups</li>
+                        <li><strong>Hybrid Setup:</strong> Combination of cloud-based and on-premises deployments</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

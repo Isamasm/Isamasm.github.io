@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Proxmox Home Lab with Integrated Services - Production-grade homelab for testing network architectures and containerized services">
+    <title>Advanced Proxmox Home Lab - Isamasm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Isamasm</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page">
+            <article class="project-detail">
+                <header class="project-detail-header">
+                    <a href="projects.html" class="back-link">← All Projects</a>
+                    <h2>Advanced Proxmox Home Lab with Integrated Services</h2>
+                    <p class="project-tagline">Production-grade homelab for testing network architectures and containerized services</p>
+                </header>
+
+                <section class="project-detail-section">
+                    <h3>Objective</h3>
+                    <p>
+                        Built a personal, production-grade homelab to test and validate network architectures, 
+                        security systems, and containerized services. This environment serves as a real-world 
+                        testing ground for enterprise technologies at a smaller scale.
+                    </p>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Technologies Used</h3>
+                    <div class="project-meta">
+                        <span class="project-tech">Proxmox VE</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">Pi-hole</span>
+                        <span class="project-tech">Jellyfin</span>
+                        <span class="project-tech">Icecast</span>
+                        <span class="project-tech">Shoutcast</span>
+                        <span class="project-tech">Portainer</span>
+                        <span class="project-tech">TrueNAS</span>
+                        <span class="project-tech">Nextcloud</span>
+                        <span class="project-tech">Tailscale</span>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Implemented Services</h3>
+                    
+                    <div class="service-card">
+                        <h4>Pi-hole</h4>
+                        <p>
+                            <strong>DNS Sinkhole:</strong> Deployed as a DNS sinkhole to block ads, trackers, and malicious 
+                            domains across the entire home network. This significantly improves security and performance 
+                            by preventing unwanted content from loading on any connected device.
+                        </p>
+                        <p><strong>Network-wide Protection:</strong> Protects all devices on the network without individual configuration.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Jellyfin Media Server</h4>
+                        <p>
+                            <strong>Self-hosted Media Streaming:</strong> Full-featured media streaming platform for movies, 
+                            TV shows, and music. Supports transcoding for various client devices and user access control.
+                        </p>
+                        <p><strong>Multi-user Access:</strong> Allows multiple users with personalized libraries and preferences.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Icecast/Shoutcast Radio Station</h4>
+                        <p>
+                            <strong>Audio Broadcasting:</strong> Set up an Icecast/Shoutcast server for broadcasting audio 
+                            content. Features automated playlist management and streaming capabilities.
+                        </p>
+                        <p><strong>Custom Content:</strong> Enables creation of personalized radio streams with scheduled content.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Portainer</h4>
+                        <p>
+                            <strong>Docker Management:</strong> Implemented Portainer CE for centralized Docker container 
+                            management. Provides GUI-based deployment, monitoring, and logging across all containers.
+                        </p>
+                        <p><strong>Simplified Operations:</strong> Makes container management accessible without CLI knowledge.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>NAS (Network-Attached Storage)</h4>
+                        <p>
+                            <strong>Centralized Storage:</strong> Configured TrueNAS/Nextcloud for centralized file storage, 
+                            automated backups, and secure sharing across all devices on the network.
+                        </p>
+                        <p><strong>Data Redundancy:</strong> Implements RAID configurations and snapshot capabilities for data protection.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>Tailscale</h4>
+                        <p>
+                            <strong>VPN for Remote Access:</strong> Deployed Tailscale VPN for secure remote access to the 
+                            homelab from anywhere. Enables seamless management without exposing services to the public internet.
+                        </p>
+                        <p><strong>Zero Configuration:</strong> Uses WireGuard under the hood for fast, secure connections without complex setup.</p>
+                    </div>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Impact & Skills Demonstrated</h3>
+                    <ul>
+                        <li><strong>Virtualization Expertise:</strong> Proficient in Proxmox VE for creating and managing virtual machines and containers</li>
+                        <li><strong>Containerization:</strong> Deep understanding of Docker and container orchestration</li>
+                        <li><strong>Network Security:</strong> Experience with DNS filtering, VPNs, and secure network configurations</li>
+                        <li><strong>Self-hosted Services:</strong> Ability to deploy and manage various self-hosted applications</li>
+                        <li><strong>Remote Management:</strong> Secure remote access solutions without compromising security</li>
+                        <li><strong>Storage Solutions:</strong> Knowledge of NAS configurations and data management</li>
+                        <li><strong>Network Architecture:</strong> Understanding of how different services interact within a network</li>
+                    </ul>
+                </section>
+
+                <section class="project-detail-section">
+                    <h3>Architecture Overview</h3>
+                    <p>
+                        The homelab runs on Proxmox VE as the hypervisor, with various services deployed as either 
+                        virtual machines or Docker containers. Network segmentation is implemented to separate 
+                        different service types, and Tailscale provides secure external access. Storage is centralized 
+                        through the NAS solution, with regular backups to prevent data loss.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">Isamasm</div>
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
