@@ -1,0 +1,23 @@
+# GitHub Pages configuration
+# This file tells GitHub Pages to use the Jekyll static site generator
+# and to use the root directory as the source
+
+# Site settings
+name: Isamasm
+description: A collection of technical projects, experiments, and experience across IT and technology.
+url: https://Isamasm.github.io
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - _config.yml
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed
